@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2016-01-07</Date>
+  <Beta>False</Beta>
+  <Category>Web:site</Category>
+  <Name>Centos Apache PHP</Name>
+  <Project>http://productionsnmnm.com/</Project>
+  <Changes>
+  </Changes>
+  <Overview>
+    Host an Apache PHP website
+  </Overview>
+  <Description>
+    Apache and PHP running on Centos[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/var/www/html[/b] : this is where your website resides.[br][br]
+    [b]Tip:[/b] You can add more volume mappings if you wish.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/jonnyczi/centos-apache-php/</Registry>
+  <GitHub>git@hawk152.dedicatedpanel.com:/home/git/repos/docker/centos-apache-php.git</GitHub>
+  <Repository>productionsnmnm/centos-apache-php.git</Repository>
+  <Support>http://productionsnmnm.com</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>81</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>444</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/centos-apache-php</HostDir>
+      <ContainerDir>/var/www/html</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:80]/index.php</WebUI>
+  <Banner></Banner>
+  <Icon>http://php.net/images/logo.php</Icon>
+</Containers>
