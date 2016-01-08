@@ -20,18 +20,7 @@
   <GitHub>https://github.com/jonnyczi/centos-apache-php</GitHub>
   <Repository>jonnyczi/centos-apache-php</Repository>
   <Support>http://productionsnmnm.com</Support>
-  <BindTime>true</BindTime>
-  <Networking>
-    <Mode>bridge</Mode>
-  </Networking>
   <Environment/>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/centos-apache-php</HostDir>
-      <ContainerDir>/var/www/html</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
   <Banner></Banner>
   <Icon>http://php.net/images/logo.php</Icon>
 </Containers>
