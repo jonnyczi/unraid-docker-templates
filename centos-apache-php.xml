@@ -17,8 +17,8 @@
     [b]Tip:[/b] You can add more volume mappings if you wish.
   </Description>
   <Registry>https://registry.hub.docker.com/u/jonnyczi/centos-apache-php/</Registry>
-  <GitHub>git@hawk152.dedicatedpanel.com:/home/git/repos/docker/centos-apache-php.git</GitHub>
-  <Repository>productionsnmnm/centos-apache-php.git</Repository>
+  <GitHub>https://github.com/jonnyczi/centos-apache-php</GitHub>
+  <Repository>jonnyczi/centos-apache-php</Repository>
   <Support>http://productionsnmnm.com</Support>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
