@@ -40,6 +40,16 @@
       <ContainerDir>/var/www/html</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/centos-apache-php/config/apache</HostDir>
+      <ContainerDir>/etc/httpd/conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+     <Volume>
+      <HostDir>/mnt/user/appdata/centos-apache-php/config/php</HostDir>
+      <ContainerDir>/etc/php</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:81]/index.php</WebUI>
   <Icon>http://php.net/images/logo.php</Icon>
