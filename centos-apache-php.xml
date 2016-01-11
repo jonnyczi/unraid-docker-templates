@@ -3,10 +3,7 @@
   <Date>2016-01-07</Date>
   <Beta>False</Beta>
   <Category>Web:site</Category>
-  <Name>Centos Apache PHP</Name>
-  <Project>http://productionsnmnm.com/</Project>
-  <Changes>
-  </Changes>
+  <Name>Centos-Apache-PHP</Name>
   <Overview>
     Host an Apache PHP website
   </Overview>
@@ -21,7 +18,7 @@
   <Repository>jonnyczi/centos-apache-php</Repository>
   <Support>http://productionsnmnm.com</Support>
   <BindTime>true</BindTime>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -37,7 +34,6 @@
       </Port>
     </Publish>
   </Networking>
-  <Environment/>
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/centos-apache-php</HostDir>
@@ -45,7 +41,6 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:80]/index.php</WebUI>
-  <Banner></Banner>
+  <WebUI>http://[IP]:[PORT:81]/index.php</WebUI>
   <Icon>http://php.net/images/logo.php</Icon>
 </Containers>
