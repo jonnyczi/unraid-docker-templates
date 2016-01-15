@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2016-01-15</Date>
+  <Beta>False</Beta>
+  <Category>Web:site</Category>
+  <Name>Centos-Nodejs-Grunt-Bower</Name>
+  <Overview>
+    Run nodejs script
+  </Overview>
+  <Description>
+    Nodejs running on Centos[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/app[/b] : this is where your app resides.[br][br]
+    [b]Tip:[/b] You can add more volume mappings if you wish.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/jonnyczi/centos-nodejs-grunt-bower/</Registry>
+  <GitHub>https://github.com/jonnyczi/centos-nodejs-grunt-bower</GitHub>
+  <Repository>jonnyczi/centos-nodejs-grunt-bower</Repository>
+  <Support>http://productionsnmnm.com</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/centos-nodejs-grunt-bower/app</HostDir>
+      <ContainerDir>/app</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/centos-nodejs-grunt-bower/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:81]/index.php</WebUI>
+  <Icon>http://php.net/images/logo.php</Icon>
+</Containers>
