@@ -41,13 +41,8 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/centos-apache-php/config/apache</HostDir>
-      <ContainerDir>/etc/httpd/conf</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-     <Volume>
-      <HostDir>/mnt/user/appdata/centos-apache-php/config/php</HostDir>
-      <ContainerDir>/etc/php</ContainerDir>
+      <HostDir>/mnt/user/appdata/centos-apache-php/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
