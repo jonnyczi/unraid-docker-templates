@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2016-01-22</Date>
+  <Beta>False</Beta>
+  <Category>Web:site</Category>
+  <Name>Centos-Openvpn</Name>
+  <Overview>
+    Host an Openvpn server
+  </Overview>
+  <Description>
+    Openvpn running on Centos[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]Tip:[/b] You can add more volume mappings if you wish.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/jonnyczi/centos-openvpn/</Registry>
+  <GitHub>https://github.com/jonnyczi/centos-openvpn</GitHub>
+  <Repository>jonnyczi/centos-openvpn</Repository>
+  <Support>http://productionsnmnm.com</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>444</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>444</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>1194</HostPort>
+        <ContainerPort>1194</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>1194</HostPort>
+        <ContainerPort>1194</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/centos-openvpn</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>http://php.net/images/logo.php</Icon>
+</Containers>
