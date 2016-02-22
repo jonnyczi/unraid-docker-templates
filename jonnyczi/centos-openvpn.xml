@@ -18,5 +18,27 @@
   <Support>http://productionsnmnm.com</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1194</HostPort>
+        <ContainerPort>1194</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>1194</HostPort>
+        <ContainerPort>1194</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/centos-openvpn</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Icon>http://php.net/images/logo.php</Icon>
 </Containers>
