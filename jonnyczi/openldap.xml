@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2016-04-03</Date>
+  <Beta>False</Beta>
+  <Category>Web:site</Category>
+  <Name>openldap</Name>
+  <Overview>
+    Host an openldap server
+  </Overview>
+  <Description>
+    openldap running on Centos[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]Tip:[/b] You can add more volume mappings if you wish.
+  </Description>
+  <Registry>https://hub.docker.com/r/jonnyczi/openldap/</Registry>
+  <GitHub>https://github.com/osixia/docker-openldap</GitHub>
+  <Repository>jonnyczi/openldap</Repository>
+  <Support>http://productionsnmnm.com</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>389</HostPort>
+        <ContainerPort>389</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>636</HostPort>
+        <ContainerPort>636</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/openldap/databse</HostDir>
+      <ContainerDir>/var/lib/ldap</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/openldap/config</HostDir>
+      <ContainerDir>/etc/ldap/slapd.d</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>http://php.net/images/logo.php</Icon>
+</Containers>
