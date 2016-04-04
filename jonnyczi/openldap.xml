@@ -12,9 +12,9 @@
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]Tip:[/b] You can add more volume mappings if you wish.
   </Description>
-  <Registry>https://hub.docker.com/r/jonnyczi/openldap/</Registry>
+  <Registry>https://hub.docker.com/r/osixia/openldap/</Registry>
   <GitHub>https://github.com/osixia/docker-openldap</GitHub>
-  <Repository>jonnyczi/openldap</Repository>
+  <Repository>osixia/openldap</Repository>
   <Support>http://productionsnmnm.com</Support>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
