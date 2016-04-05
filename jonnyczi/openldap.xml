@@ -46,13 +46,13 @@
     </Volume>
     <Volume>
       <HostDir>/mnt/user/appdata/openldap/environment</HostDir>
-      <ContainerDir>/etc/ldap/environment/01-custom</ContainerDir>
-      <Mode>ro</Mode>
+      <ContainerDir>/container/environment/01-custom</ContainerDir>
+      <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/user/appdata/openldap/certs</HostDir>
       <ContainerDir>/container/service/slapd/assets/certs</ContainerDir>
-      <Mode>ro</Mode>
+      <Mode>rw</Mode>
     </Volume>
   </Data>
   <Icon>http://php.net/images/logo.php</Icon>
