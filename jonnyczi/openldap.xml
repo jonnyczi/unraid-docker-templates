@@ -35,7 +35,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/openldap/databse</HostDir>
+      <HostDir>/mnt/user/appdata/openldap/database</HostDir>
       <ContainerDir>/var/lib/ldap</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
