@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2016-06-14</Date>
+  <Beta>False</Beta>
+  <Category>Web:site</Category>
+  <Name>Centos-Crontab-PHP</Name>
+  <Overview>
+    Crontab with PHP
+  </Overview>
+  <Description>
+    Crontab and PHP running on Centos[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]Tip:[/b] You can add more volume mappings if you wish.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/jonnyczi/centos-crontab-php/</Registry>
+  <GitHub>https://github.com/jonnyczi/centos-crontab-php</GitHub>
+  <Repository>jonnyczi/centos-crontab-php</Repository>
+  <Support>http://productionsnmnm.com</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/centos-crontab-php/scripts</HostDir>
+      <ContainerDir>/scripts</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/centos-crontab-php/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>http://php.net/images/logo.php</Icon>
+</Containers>
