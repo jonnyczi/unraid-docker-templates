@@ -35,7 +35,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/centos-openvpn</HostDir>
+      <HostDir>/mnt/user/appdata/centos-openvpn/config</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
