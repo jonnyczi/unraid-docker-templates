@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2016-06-20</Date>
+  <Beta>False</Beta>
+  <Category>Web:site</Category>
+  <Name>Centos-Letencrypt</Name>
+  <Overview>
+    Lets encrypt service
+  </Overview>
+  <Description>
+    Lets encrypt running on Centos[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]Tip:[/b] You can add more volume mappings if you wish.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/jonnyczi/centos-letsencrypt/</Registry>
+  <GitHub>https://github.com/jonnyczi/centos-letsencrypt</GitHub>
+  <Repository>jonnyczi/centos-letsencrypt</Repository>
+  <Support>http://productionsnmnm.com</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/centos-openvpn/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/centos-letsencrypt</HostDir>
+      <ContainerDir>/etc/letsencrypt</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>http://php.net/images/logo.php</Icon>
+</Containers>
