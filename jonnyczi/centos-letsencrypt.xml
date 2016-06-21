@@ -29,7 +29,7 @@
       <Port>
         <HostPort>443</HostPort>
         <ContainerPort>443</ContainerPort>
-        <Protocol>udp</Protocol>
+        <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
