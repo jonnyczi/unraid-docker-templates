@@ -3,7 +3,7 @@
   <Date>2016-06-20</Date>
   <Beta>False</Beta>
   <Category>Web:site</Category>
-  <Name>Centos-Letencrypt</Name>
+  <Name>Centos-Letsencrypt</Name>
   <Overview>
     Lets encrypt service
   </Overview>
