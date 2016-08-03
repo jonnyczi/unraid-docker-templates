@@ -13,7 +13,7 @@
     [b]Tip:[/b] You can add more volume mappings if you wish.
   </Description>
   <Registry>https://registry.hub.docker.com/u/jonnyczi/centos-dropbox/</Registry>
-  <GitHub>https://github.com/jonnyczi/centos-dropbox/GitHub>
+  <GitHub>https://github.com/jonnyczi/centos-dropbox</GitHub>
   <Repository>jonnyczi/centos-dropbox</Repository>
   <Support>http://cedmafinance.ca</Support>
   <BindTime>true</BindTime>
