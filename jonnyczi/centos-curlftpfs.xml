@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2016-06-14</Date>
+  <Beta>False</Beta>
+  <Category>Web:site</Category>
+  <Name>Centos-Curlftpfs</Name>
+  <Overview>
+    Curlftpfs
+  </Overview>
+  <Description>
+    Curlftpfs running on Centos[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]Tip:[/b] You can add more volume mappings if you wish.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/jonnyczi/centos-curlftpfs/</Registry>
+  <GitHub>https://github.com/jonnyczi/centos-curlftpfs</GitHub>
+  <Repository>jonnyczi/centos-curlftpfs</Repository>
+  <Support>jonnyczi-systems.com</Support>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/centos-curlftpfs/ftp</HostDir>
+      <ContainerDir>/ftp</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/centos-curlftpfs/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>http://php.net/images/logo.php</Icon>
+  <ExtraParams>--device /dev/fuse</ExtraParams>
+</Containers>
