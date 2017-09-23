@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>23-09-2018</Date>
+  <Beta>False</Beta>
+  <Category>Cryptocurrency</Category>
+  <Name>burst-plotter</Name>
+  <Overview>
+    Burstcoin parallel plotter with support for Unraid
+  </Overview>
+  <Description>
+    Burstcoin plotter that can plot many drives in parallel. Plotter is currently using mdcct.
+    [br][br]
+    GitHub: https://github.com/jonnyczi/docker-burst-plotter
+    [br][br]
+    - Create txt files in the location you would like to place your plots with your desired configuration baked in the file name (ex.: 806072864698000319_4096_4096_1024.txt)
+      - If it detects a plot file matching your txt file it will skip it to prevent accidental loss of plot files
+      - Works recursively, create the txt files in sub directories if you wish
+      - Every txt file found will run a new instance of the plotter at the same time as the others WATCH YOUR RAM!
+    [br][br]
+
+    - Mount your plot directories to /plots in the container
+      - If using multiple volumes mount them in sub directories inside /plots (ex.: /plots/volume1)
+    [br][br]
+
+    - Run the container
+      - Verify the output and your files to make sure its working
+      - The output of the plotter is not very organized and I'm working on it
+    [br][br]
+
+    - Todo
+      - Unraid friendly (Priority)
+      - Find a way to optimize at the same time as plotting (Priority)
+      - The output of the plotter is not very organized and I'm working on it
+      - Add arguments for number of threads and to choose between SSE4 and AVX2
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/jonnyczi/burst-plotter/</Registry>
+  <GitHub>https://github.com/jonnyczi/burst-plotter</GitHub>
+  <Repository>jonnyczi/burst-plotter</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/plots</HostDir>
+      <ContainerDir>/plots</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+</Containers>
