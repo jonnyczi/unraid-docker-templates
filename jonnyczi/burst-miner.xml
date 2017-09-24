@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>24-09-2018</Date>
+  <Beta>False</Beta>
+  <Category>Cryptocurrency</Category>
+  <Name>burst-miner</Name>
+  <Overview>
+    Burstcoin miner with support for Unraid
+  </Overview>
+  <Description>
+    Burstcoin miner. Miner is currently using creepMiner.
+    [br][br]
+    GitHub: https://github.com/jonnyczi/docker-burst-miner
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/jonnyczi/burst-miner/</Registry>
+  <GitHub>https://github.com/jonnyczi/burst-miner</GitHub>
+  <Repository>jonnyczi/burst-miner</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/plots</HostDir>
+      <ContainerDir>/plots</ContainerDir>
+      <Mode>r</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/burst-miner/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+</Containers>
